@@ -1,0 +1,204 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\namesection{Rajat}{Malhotra}{ \urlstyle{same}\url{http://rajatmalhotra.com/} \\
+\href{mailto:r24malho@edu.uwaterloo.ca}{r24malho@edu.uwaterloo.ca} | 226-929-5549 | \href{https://github.com/rajat-malhotra}{github.com/rajat-malhotra} | \\ 
+\href{https://www.linkedin.com/in/rajat-malhotra-391007122/}{linkedin.com/in/rajatmalhotra} \\
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{University of Waterloo}
+\descript{ Bachelor of Computer Science (3rd Year)}
+\location{Expected Graduation May 2021 | Waterloo, ON, CA}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{COURSEWORK}
+Information Retrieval \\
+Algorithms\\
+User Interface and Design\\
+Object Oriented Programming \\
+Functional Programming \\
+Imperative Programming\\
+Unix Tools and Scripting \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\textbullet{} Java \\ 
+\textbullet{} C \\  
+\textbullet{} C++ \\ 
+\textbullet{} CSS3 \\ 
+\textbullet{} Bash Shell \\ 
+\textbullet{} TypeScript \\
+\textbullet{} Python \\
+\textbullet{} HTML5 \\ 
+\textbullet{} Node.js \\ 
+\textbullet{} Assembly \\
+\textbullet{} \LaTeX\ \\
+\textbullet{} R \\
+\sectionsep
+\subsection{Library}
+\textbullet{} Numpy \\
+\textbullet{} SciPy \\ 
+\textbullet{} scikit-learn \\
+\textbullet{} Angular \\
+\textbullet{} pandas \\
+\textbullet{} MySQL \\
+\sectionsep
+\subsection{Other Skills}
+Expertise knowledge of: \\
+\textbullet{} GITLAB\\ 
+\textbullet{} GITHUB \\ 
+\textbullet{} Azure \\ 
+\textbullet{} Excel \\ 
+\textbullet{} Access \\ 
+\textbullet{} Business Finance \\ 
+\textbullet{} Business Requirement Document(BRD)  \\
+\textbullet{} Swimming \\
+\textbullet{} Public Speaking
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Toronto Dominion (TD) Bank}
+\descript{| Software Developer}
+\location{January 2019 - April 2019 | Toronto, ON, CA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+
+\item Engineered the branch locator web app using \underline{TypeScript},  \underline{Angular} and \underline{Progressive web application} technology.
+\item Wrote an \underline{Express server} to implement push notification feature.
+\item Published the work on \underline{Confluence} as a knowledge base document, for help in future implementation to other web-based applications.  
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Toronto Tansit Commission (TTC)}
+\descript{| Service Desk Analyst}
+\location{May 2017 -- December 2017 | Toronto, ON, CA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Provided training for the new hires(contractors and interns), the first and second level technical support to all employees equipped with any kind of IT asset at TTC. 
+\item Supported SAP, Sharepoint, mainframe related issues throughout the commission.
+\item Designed and planned a tour and session on bringing your kids to work day for \underline{25+ students} regarding the evolution of computer science in the last decade.
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Public projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Leadership Experience}
+
+\runsubsection{Mathematics Society}
+\descript{| President (Fall 2019)}
+\begin{tightemize}
+\item Drove cross-functional efforts between VP-Finance, VP-Operations, VP-Internal and  VP-Academics, \underline{25+ directors}, and \underline{50+ other volunteers} for the smooth and efficient functioning of society.
+\item Represented student voice during regular meetings at \underline{Admission and Recruitment committee} with Associate Dean and other members of the faculty to increase \underline{enrolment rates}, and to improve \underline{gender diversity} in computer science and other math programs.
+\item Co-wrote a \underline{Memorandum Of Understanding} with the executive director of Math Endowment Fund and provided bi-weekly executive report to the society's Student Council and the Board of Directors. 
+\item Organized successful Council and VPA-by elections and helped in the smooth transition for the office of \underline{the President}.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Computer Science Club (CSC)}
+\descript{| Vice President (Spring 2019)}
+\begin{tightemize}
+\item Organized 10 social and academic events during the term.
+\item Drove cross-functional efforts between marketing, finance and sponsorship teams to increase the engagement and attendees for the events by more than \underline{60\%} as compared to previous terms.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Mathematics Society Student Council}
+\descript{| Computer Science Representative (Spring 2019)}
+\begin{tightemize}
+\item Organized and won a successful campaign for computer science constituency. Voted and co-wrote the \underline{budget spring 2019} and \underline{4+ policies} affecting office \underline{code of conduct} and day to day operations of the society.
+\item Held bi-weekly office hours during the term to address the problems and concerns of various members of the constituency.
+\end{tightemize}
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
